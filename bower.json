@@ -1,0 +1,46 @@
+{
+  "name": "bjoerk-movies",
+  "private": true,
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "bootstrap": "~4.0.0-alpha.6",
+    "modernizr": "~2.8.1",
+    "font-awesome": "^4.7.0",
+    "animate.css": "^3.5.2",
+    "gsap": "^1.19.1",
+    "scrollmagic": "^2.0.5",
+    "sweetalert2": "^6.6.9"
+  },
+  "overrides": {
+    "bootstrap": {
+      "main": [
+        "./scss/bootstrap.scss",
+        "./dist/js/bootstrap.min.js"
+      ]
+    },
+    "font-awesome": {
+      "main": [
+        "./css/font-awesome.min.css"
+      ]
+    },
+    "gsap": {
+      "main": [
+        "./src/uncompressed/TweenMax.js",
+        "./src/uncompressed/TweenLite.js",
+        "./src/uncompressed/TimelineMax.js",
+        "./src/uncompressed/TimelineLite.js"
+      ]
+    },
+    "scrollmagic": {
+      "main": [
+        "./scrollmagic/uncompressed/ScrollMagic.js",
+        "./scrollmagic/uncompressed/plugins/debug.addIndicators.js",
+        "./scrollmagic/uncompressed/plugins/animation.gsap.js"
+      ]
+    }
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.3.0"
+  }
+}

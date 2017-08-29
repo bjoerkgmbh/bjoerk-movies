@@ -1,0 +1,160 @@
+.carousel {
+  padding: 0;
+  background-color: #e6e6e6;
+  height: auto;
+  z-index: 1;
+  @include media-breakpoint-widescreen {
+    padding-top: 150px;
+  }
+  @include media-breakpoint-xl {
+    padding-top: 100px;
+  }
+  @include media-breakpoint-down(lg) {
+    padding-top: 0;
+  }
+  >div {
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+    @include media-breakpoint-widescreen {
+      width: 60%;
+    }
+    @include media-breakpoint-xl {
+      width: 60%;
+    }
+    @include media-breakpoint-down(lg) {
+      width: 100%;
+    }
+  }
+}
+
+.main-carousel {
+  height: 339px;
+  @include media-breakpoint-widescreen {
+    height: 450px;
+  }
+  @include media-breakpoint-xl {
+    height: 455px;
+  }
+  @include media-breakpoint-down(lg) {
+    height: 455px;
+  }
+  @include media-breakpoint-down(sm) {
+    height: 230px;
+  }
+  .carousel-cell {
+    width: 800px;
+    height: 455px;
+    @include media-breakpoint-widescreen {
+      height: 450px;
+    }
+    @include media-breakpoint-xl {
+      height: 455px;
+    }
+    @include media-breakpoint-down(lg) {
+      height: 455px;
+    }
+    @include media-breakpoint-down(sm) {
+      width: 400px;
+      height: 230px;
+    }
+  }
+  .carousel-data {
+    position: relative;
+    .carousel-header {
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 10px 20px;
+      color: white;
+      width: 100%;
+      text-transform: uppercase;
+      margin-bottom: 0px;
+      background-color: rgba(0, 0, 0, .4);
+      z-index: 1;
+      @include media-breakpoint-xl {
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 20px;
+      }
+      @include media-breakpoint-down(sm) {
+        margin-left: 20px;
+        padding: 5px 20px;
+        font-size: 20px;
+      }
+    }
+    .video-element {
+      width: 800px;
+      height: 455px;
+      object-fit: cover;
+      overflow: hidden;
+      @include media-breakpoint-widescreen {
+        height: 450px;
+      }
+      @include media-breakpoint-xl {
+        height: 455px;
+      }
+      @include media-breakpoint-down(lg) {
+        height: 455px;
+      }
+      @include media-breakpoint-down(sm) {
+        width: 400px;
+        height: 220px;
+      }
+    }
+    .carousel-href {
+      position: absolute;
+      width: 100%;
+      z-index: -1;
+    }
+  }
+}
+
+.flickity-page-dots {
+  display: none;
+}
+
+.flickity-prev-next-button {
+  width: 60px;
+  height: 60px;
+  background-color: black;
+  border-radius: 0;
+  @include media-breakpoint-down(sm) {
+    width: 50px;
+    height: 50px;
+  }
+  .arrow {
+    fill: white;
+  }
+  &:hover {
+    background-color: black;
+  }
+  &.no-svg {
+    color: white;
+  }
+  &.previous {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    border: none;
+    margin-left: 5px;
+    cursor: pointer;
+    & svg {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &.next {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    border: none;
+    margin-right: 5px;
+    cursor: pointer;
+    & svg {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

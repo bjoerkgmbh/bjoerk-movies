@@ -1,0 +1,90 @@
+.team {
+  padding: 0;
+  background-color: white;
+  height: auto;
+  >.container {
+    padding: 0;
+    >.row {
+      margin: 0;
+    }
+  }
+  @include media-breakpoint-widescreen {
+    padding-top: 150px;
+    padding-bottom: 150px;
+  }
+  @include media-breakpoint-xl {
+    padding-top: 150px;
+    padding-bottom: 150px;
+  }
+  @include media-breakpoint-down(lg) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  &--header-style {
+    text-align: center;
+    text-transform: uppercase;
+    @include media-breakpoint-down(sm) {
+      font-size: 1.2rem;
+    }
+  }
+  &--line-style {
+    border: 1px solid;
+    width: 5%;
+    margin-top: 5px;
+    margin-bottom: 25px;
+  }
+  &__member {
+    text-align: center;
+    padding-bottom: 15px;
+    @include media-breakpoint-down(sm) {
+      padding-bottom: 30px;
+    }
+    img {
+      width: 100%;
+      height: auto;
+      @include media-breakpoint-only(md) {
+        width: 150px;
+        height: 150px;
+      }
+      @include media-breakpoint-down(sm) {
+        width: 200px;
+        height: 200px;
+      }
+    }
+    &__infos {
+      width: 202px;
+      margin: 0 auto;
+      @include media-breakpoint-only(md) {
+        width: 150px;
+      }
+      h4 {
+        padding-top: 10px;
+        padding-bottom: 15px;
+        @include media-breakpoint-down(sm) {
+          padding-bottom: 5px;
+        }
+      }
+      .contact p {
+        margin-bottom: 0;
+      }
+    }
+  }
+  .contact {
+    &__infos {
+      margin-top: 40px;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      p {
+        display: inline-block;
+        margin-right: 20px;
+        @include media-breakpoint-down(sm) {
+          width: 100%;
+          margin: 0;
+          line-height: 1.5;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,308 @@
+#blunt_container {
+  width: 15px;
+  height: 5px;
+  position: absolute;
+  top: 0;
+  right: 435px;
+  transform: translateY(0);
+  animation: feelingit 6s infinite;
+}
+
+#blunt_container_2 {
+  width: 15px;
+  height: 5px;
+  position: absolute;
+  top: 220px;
+  right: 385px;
+  transform: translateY(0);
+  animation: feelingit 1s infinite;
+}
+
+#blunt_container_3 {
+  width: 15px;
+  height: 5px;
+  position: absolute;
+  top: 130px;
+  right: 285px;
+  transform: translateY(0);
+  animation: feelingit 2s infinite;
+}
+
+#blunt_container_4 {
+  width: 15px;
+  height: 5px;
+  position: absolute;
+  top: 260px;
+  right: 215px;
+  transform: translateY(0);
+  animation: feelingit 5s infinite;
+}
+
+#blunt_container_5 {
+  width: 15px;
+  height: 5px;
+  position: absolute;
+  top: 60px;
+  right: 80px;
+  transform: translateY(0);
+  animation: feelingit 2s infinite;
+}
+
+@keyframes feelingit {
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes smoke1 {
+  0% {
+    transform: scale(0.2);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(3) translate(6px, -36px);
+    opacity: 0;
+  }
+}
+
+@keyframes smoke2 {
+  0% {
+    transform: scale(0.2);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(3) translate(-8px, -50px);
+    opacity: 0;
+  }
+}
+
+@keyframes smoke3 {
+  0% {
+    transform: scale(0.2);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(3) translate(-1px, -41px);
+    opacity: 0;
+  }
+}
+
+@keyframes smoke4 {
+  0% {
+    transform: scale(0.2);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(3) translate(0px, -41px);
+    opacity: 0;
+  }
+}
+
+@keyframes smoke5 {
+  0% {
+    transform: scale(0.2);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(3) translate(-4px, -42px);
+    opacity: 0;
+  }
+}
+
+.smoke-group {
+  width: 100px;
+  height: 200px;
+  margin-top: -190px;
+  margin-left: -30px;
+  position: absolute;
+}
+
+.smoke {
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 15px / 2);
+  width: 15px;
+  height: 15px;
+  background-color: whitesmoke;
+  border-radius: 7.5px;
+  filter: blur(6px);
+  opacity: 0;
+}
+
+.smoke:nth-child(1) {
+  animation-name: smoke3;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+  animation-delay: 0.4s;
+  animation-iteration-count: infinite;
+}
+
+.smoke:nth-child(2) {
+  animation-name: smoke2;
+  animation-duration: 3s;
+  animation-timing-function: ease-out;
+  animation-delay: 0.8s;
+  animation-iteration-count: infinite;
+}
+
+.smoke:nth-child(3) {
+  animation-name: smoke4;
+  animation-duration: 5s;
+  animation-timing-function: ease-out;
+  animation-delay: 1.2s;
+  animation-iteration-count: infinite;
+}
+
+.smoke:nth-child(4) {
+  animation-name: smoke2;
+  animation-duration: 5s;
+  animation-timing-function: ease-out;
+  animation-delay: 1.6s;
+  animation-iteration-count: infinite;
+}
+
+.smoke:nth-child(5) {
+  animation-name: smoke3;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+}
+
+.smoke:nth-child(6) {
+  animation-name: smoke3;
+  animation-duration: 4s;
+  animation-timing-function: ease-out;
+  animation-delay: 2.4s;
+  animation-iteration-count: infinite;
+}
+
+.smoke:nth-child(7) {
+  animation-name: smoke1;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+  animation-delay: 2.8s;
+  animation-iteration-count: infinite;
+}
+
+.smoke:nth-child(8) {
+  animation-name: smoke1;
+  animation-duration: 5s;
+  animation-timing-function: ease-out;
+  animation-delay: 3.2s;
+  animation-iteration-count: infinite;
+}
+
+.smoke:nth-child(9) {
+  animation-name: smoke5;
+  animation-duration: 5s;
+  animation-timing-function: ease-out;
+  animation-delay: 3.6s;
+  animation-iteration-count: infinite;
+}
+
+.smoke:nth-child(10) {
+  animation-name: smoke4;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+  animation-delay: 4s;
+  animation-iteration-count: infinite;
+}
+
+.smoke:nth-child(11) {
+  animation-name: smoke5;
+  animation-duration: 3s;
+  animation-timing-function: ease-out;
+  animation-delay: 4.4s;
+  animation-iteration-count: infinite;
+}
+
+.smoke:nth-child(12) {
+  animation-name: smoke4;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+  animation-delay: 4.8s;
+  animation-iteration-count: infinite;
+}
+
+.smoke:nth-child(13) {
+  animation-name: smoke5;
+  animation-duration: 4s;
+  animation-timing-function: ease-out;
+  animation-delay: 5.2s;
+  animation-iteration-count: infinite;
+}
+
+.smoke:nth-child(14) {
+  animation-name: smoke2;
+  animation-duration: 4s;
+  animation-timing-function: ease-out;
+  animation-delay: 5.6s;
+  animation-iteration-count: infinite;
+}
+
+.smoke:nth-child(15) {
+  animation-name: smoke5;
+  animation-duration: 4s;
+  animation-timing-function: ease-out;
+  animation-delay: 6s;
+  animation-iteration-count: infinite;
+}
+
+.smoke:nth-child(16) {
+  animation-name: smoke3;
+  animation-duration: 3s;
+  animation-timing-function: ease-out;
+  animation-delay: 6.4s;
+  animation-iteration-count: infinite;
+}
+
+.smoke:nth-child(17) {
+  animation-name: smoke5;
+  animation-duration: 4s;
+  animation-timing-function: ease-out;
+  animation-delay: 6.8s;
+  animation-iteration-count: infinite;
+}
+
+.smoke:nth-child(18) {
+  animation-name: smoke1;
+  animation-duration: 4s;
+  animation-timing-function: ease-out;
+  animation-delay: 7.2s;
+  animation-iteration-count: infinite;
+}
+
+.smoke:nth-child(19) {
+  animation-name: smoke1;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+  animation-delay: 7.6s;
+  animation-iteration-count: infinite;
+}
+
+.smoke:nth-child(20) {
+  animation-name: smoke4;
+  animation-duration: 3s;
+  animation-timing-function: ease-out;
+  animation-delay: 8s;
+  animation-iteration-count: infinite;
+}

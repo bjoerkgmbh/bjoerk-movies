@@ -1,0 +1,51 @@
+.footer {
+  padding: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: black;
+  height: auto;
+  &__first {
+    padding-bottom: 150px;
+    &__text {
+      text-align: center;
+      color: white;
+      h4 {
+        @include media-breakpoint-down(sm) {
+          line-height: 1.5;
+        }
+      }
+      p {
+        margin-bottom: 0;
+        @include media-breakpoint-down(sm) {
+          line-height: 1.5;
+        }
+      }
+    }
+  }
+  &__second-left {
+    text-align: left;
+    &__text {
+      color: white;
+      @include media-breakpoint-down(sm) {
+        line-height: 1.2;
+      }
+    }
+  }
+  &__second-right {
+    text-align: right;
+    &__link {
+      margin-right: 10px;
+      color: white !important;
+      cursor: pointer;
+      @include media-breakpoint-down(sm) {
+        line-height: 2;
+      }
+    }
+  }
+  .container {
+    padding: 0;
+    .row {
+      margin: 0;
+    }
+  }
+}

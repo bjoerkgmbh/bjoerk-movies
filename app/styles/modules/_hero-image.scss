@@ -1,0 +1,228 @@
+.hero-image {
+  padding: 0;
+  color: white;
+  background-color: black;
+  text-align: center;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+  height: 100vh;
+  @include media-breakpoint-widescreen {
+    height: 120vh;
+  }
+  @include media-breakpoint-down(lg) {
+    @media (orientation: landscape) {
+      height: 100vh;
+    }
+    @media (orientation: portrait) {
+      height: 50vh;
+    }
+  }
+  @include media-breakpoint-down(md) {
+    height: 75vh;
+  }
+  @include media-breakpoint-down(sm) {
+    @media (orientation: landscape) {
+      height: 600px;
+    }
+    @media (orientation: portrait) {
+      height: 800px;
+    }
+  }
+  &__background {
+    background: url('../images/sherrif_klein.jpg') no-repeat;
+    background-attachment: fixed;
+    height: 100%;
+    margin: 0 auto;
+    opacity: 1;
+    @include media-breakpoint-widescreen {
+      width: 2550px;
+      background-size: 100%;
+      background-position: 5% 5%;
+    }
+    @media (min-width: 1500px) and (max-width: 1999px) {
+      width: 2000px;
+      background-size: 100%;
+      background-position: 50% -180px;
+    }
+    @media (min-width: 1200px) and (max-width: 1499px) {
+      width: 1500px;
+      background-size: cover;
+      background-position: 0 -100px;
+    }
+    @include media-breakpoint-down(lg) {
+      width: 100%;
+      background-size: cover;
+      background-position: 0 10%;
+    }
+    @include media-breakpoint-down(sm) {
+      background-attachment: initial;
+      @media (orientation: landscape) {
+        background-position: center top;
+      }
+      @media (orientation: portrait) {
+        background-position: center center;
+      }
+    }
+    .hero-image__foreground {
+      height: 800px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      @media (min-width: 1500px) and (max-width: 1999px) {
+        height: 600px;
+      }
+      @media (min-width: 1200px) and (max-width: 1499px) {
+        height: 500px;
+      }
+      @include media-breakpoint-down(lg) {
+        height: 100%;
+      }
+      &__inner {
+        margin: 0 auto;
+        text-align: center;
+        height: auto;
+        width: 1140px;
+        position: absolute;
+        z-index: 1;
+        left: 50%;
+        transform: translateX(-50%) !important;
+        bottom: 95px;
+        padding: 60px;
+        background-color: rgba(255, 255, 255, 0.8);
+        @media (min-width: 1500px) and (max-width: 1999px) {
+          padding: 30px;
+          bottom: 45px;
+          width: 900px;
+        }
+        @media (min-width: 1200px) and (max-width: 1499px) {
+          padding: 30px;
+          bottom: 25px;
+          width: 700px;
+        }
+        @include media-breakpoint-down(lg) {
+          transform: none !important;
+          width: 100%;
+          background-color: rgba(255, 255, 255, 0.5);
+          padding: 50px 150px;
+          bottom: 0;
+          left: 0;
+          top: initial;
+        }
+        @include media-breakpoint-down(sm) {
+          width: 100%;
+          padding: 15px;
+          background-color: rgba(255, 255, 255, 0.5);
+        }
+        &--header-style {
+          text-transform: uppercase;
+          color: black;
+          @include media-breakpoint-down(sm) {
+            font-size: 1.2rem;
+          }
+        }
+        &--line-style {
+          border: 1px solid;
+          width: 20%;
+          margin-top: 5px;
+          margin-bottom: 20px;
+          color: black;
+        }
+        &--text-style {
+          color: black;
+          @media (min-width: 1500px) and (max-width: 1999px) {
+            font-size: 1.2rem;
+          }
+          @media (min-width: 1200px) and (max-width: 1499px) {
+            font-size: 1rem;
+          }
+          @include media-breakpoint-only(lg) {
+            font-size: 1.3rem;
+          }
+          @include media-breakpoint-only(md) {
+            font-size: 1.2rem;
+          }
+          @include media-breakpoint-down(sm) {
+            line-height: 1.5;
+          }
+        }
+        &--star {
+          @include media-breakpoint-widescreen {
+            position: absolute;
+            z-index: 2;
+            width: 480px;
+            top: -210px;
+            left: -230px;
+            transform: rotate(353deg);
+          }
+          @media (min-width: 1500px) and (max-width: 1999px) {
+            position: absolute;
+            z-index: 2;
+            width: 400px;
+            top: -70%;
+            left: -24%;
+            transform: rotate(353deg);
+          }
+          @media (min-width: 1200px) and (max-width: 1499px) {
+            position: absolute;
+            z-index: 2;
+            width: 330px;
+            top: -129px;
+            left: -25%;
+            transform: rotate(353deg);
+          }
+          @include media-breakpoint-down(lg) {
+            display: none;
+          }
+        }
+      }
+      &--gunshots {
+        position: absolute;
+        width: 450px;
+        height: 450px;
+        top: -150px;
+        right: -280px;
+        @include media-breakpoint-down(lg) {
+          display: none;
+        }
+        .gunshots {
+          width: 180px;
+          height: 180px;
+        }
+        #fifth_gunshot {
+          position: absolute;
+          top: -35px;
+          right: -10px;
+          transform: rotate(160deg);
+        }
+        #second_gunshot {
+          position: absolute;
+          top: 120px;
+          right: 286px;
+          transform: rotate(40deg);
+        }
+        #third_gunshot {
+          position: absolute;
+          top: 30px;
+          right: 190px;
+        }
+        #fourth_gunshot {
+          position: absolute;
+          top: 160px;
+          right: 135px;
+          transform: rotate(120deg);
+        }
+        #first_gunshot {
+          position: absolute;
+          top: -100px;
+          right: 340px;
+          transform: rotate(75deg);
+        }
+      }
+    }
+  }
+}
+
+.showBullet {
+  opacity: 1 !important;
+}

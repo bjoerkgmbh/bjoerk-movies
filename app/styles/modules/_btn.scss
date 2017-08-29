@@ -1,0 +1,36 @@
+.btn {
+  background-color: #474a7b;
+  border-color: #474a7b;
+  &:hover {
+    cursor: pointer;
+    background-color: #b9b3cd;
+    border-color: #b9b3cd;
+  }
+  &:click {
+    cursor: pointer;
+  }
+  @include media-breakpoint-widescreen {
+    &--autosize {
+      padding: 10px 21px;
+      font-size: 20px;
+    }
+  }
+  @include media-breakpoint-xl {
+    &--autosize {
+      padding: 5px 10px;
+      font-size: 14px;
+    }
+  }
+  @include media-breakpoint-only(lg) {
+    &--autosize {
+      padding: 8px 15px;
+      font-size: 15px;
+    }
+  }
+  @include media-breakpoint-down(md) {
+    &--autosize {
+      padding: 8px 15px;
+      font-size: 18px;
+    }
+  }
+}

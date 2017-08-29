@@ -1,0 +1,102 @@
+.description {
+  background-color: #e6e6e6;
+  padding: 0;
+  height: auto;
+  @include media-breakpoint-widescreen {
+    padding-top: 150px;
+    padding-bottom: 150px;
+  }
+  @include media-breakpoint-xl {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  @include media-breakpoint-down(lg) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  &__content {
+    &--header-style {
+      text-transform: uppercase;
+      text-align: center;
+      @include media-breakpoint-down(sm) {
+        font-size: 1.2rem;
+      }
+    }
+    &--line-style {
+      border: 1px solid black;
+      margin-top: 25px;
+      margin-bottom: 35px;
+      @include media-breakpoint-widescreen {
+        width: 40%
+      }
+      @include media-breakpoint-xl {
+        width: 30%;
+      }
+      @include media-breakpoint-down(lg) {
+        width: 30%;
+      }
+      @include media-breakpoint-down(md) {
+        width: 40%;
+      }
+      @include media-breakpoint-down(sm) {
+        width: 50%;
+        margin-top: 15px;
+        margin-bottom: 20px;
+      }
+    }
+    &--text-style {
+      display: block;
+      margin: auto;
+      text-align: center;
+      padding-bottom: 56px;
+      @include media-breakpoint-widescreen {
+        width: 80%;
+      }
+      @include media-breakpoint-xl {
+        width: 60%;
+      }
+      @include media-breakpoint-only(lg) {
+        width: 80%;
+      }
+      @include media-breakpoint-only(md) {
+        width: 90%;
+      }
+      @include media-breakpoint-down(sm) {
+        width: 100%;
+        margin-top: 15px;
+        padding-bottom: 20px;
+        line-height: 1.5;
+      }
+    }
+    &--media {
+      width: 100%;
+      margin: 0 auto;
+      @include media-breakpoint-xl {
+        width: 80%;
+      }
+      @include media-breakpoint-only(lg) {
+        width: 80%;
+      }
+      @include media-breakpoint-only(md) {
+        width: 90%;
+      }
+      @include media-breakpoint-only(sm) {
+        width: 100%;
+      }
+    }
+  }
+}
+
+#bjoerk_movies_logo {
+  width: 100% !important;
+  height: 500px !important;
+  @include media-breakpoint-down(lg) {
+    height: 400px !important;
+  }
+  @include media-breakpoint-down(md) {
+    height: 300px !important;
+  }
+  @include media-breakpoint-down(sm) {
+    height: 200px !important;
+  }
+}
