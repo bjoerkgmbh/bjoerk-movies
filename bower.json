@@ -23,6 +23,11 @@
         "./css/font-awesome.min.css"
       ]
     },
+    "animate.css": {
+      "main": [
+        "./animate.min.css"
+      ]
+    },
     "gsap": {
       "main": [
         "./src/uncompressed/TweenMax.js",
