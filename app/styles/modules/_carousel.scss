@@ -43,7 +43,7 @@
     height: 230px;
   }
   .carousel-cell {
-    width: 800px;
+    width: 801px;
     height: 455px;
     @include media-breakpoint-widescreen {
       height: 450px;
@@ -83,7 +83,7 @@
       }
     }
     .video-element {
-      width: 800px;
+      width: 101%;
       height: 455px;
       object-fit: cover;
       overflow: hidden;

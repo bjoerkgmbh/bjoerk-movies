@@ -10,19 +10,12 @@ class Videos {
   videosHover() {
     jQueryBridget('flickity', Flickity, $);
     var $carousel = $('.main-carousel').flickity({
-      'contain': true,
       'initialIndex': 2,
+      'contain': true,
+      'wrapAround': true,
       'cellAlign': 'center',
       'autoPlay': 3000,
       'draggable': false
-    });
-
-    var flkty = $carousel.data('flickity');
-
-    $('.flickity-prev-next-button').on('click', function () {
-      $('#carousel').find('.flickity-slider .carousel-cell').each(function () {
-        $(this).find('.video-element video').get(0).pause();
-      });
     });
 
     $carousel.on('select.flickity', function () {
