@@ -3,14 +3,14 @@ import $ from 'jquery';
 class Cover {
   constructor() {
     this.animateCover();
-    this.displayCover();
+    // this.displayCover();
   }
 
-  displayCover() {
-    if ($(window).width() < 576) {
-      $('.cover').find('video').attr('poster', 'images/bjoerk_telefoniert.jpg');
-    }
-  }
+  // displayCover() {
+  //   if ($(window).width() < 576) {
+  //     $('.cover').find('video').attr('poster', 'images/bjoerk_telefoniert.jpg');
+  //   }
+  // }
 
   animateCover() {
     var tooSmall = false;
