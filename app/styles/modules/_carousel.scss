@@ -5,10 +5,10 @@
   position: relative;
   z-index: 1;
   overflow: hidden;
-  @include media-breakpoint-widescreen {
+  @include media-breakpoint-up(xl) {
     padding-top: 150px;
   }
-  @include media-breakpoint-xl {
+  @include media-breakpoint-down(xl) {
     padding-top: 100px;
   }
   @include media-breakpoint-down(lg) {
@@ -19,10 +19,10 @@
     padding: 0;
     overflow: hidden;
     position: relative;
-    @include media-breakpoint-widescreen {
+    @include media-breakpoint-up(xl) {
       width: 60%;
     }
-    @include media-breakpoint-xl {
+    @include media-breakpoint-down(xl) {
       width: 60%;
     }
     @include media-breakpoint-down(lg) {
@@ -34,10 +34,10 @@
 }
 
 .main-carousel {
-  @include media-breakpoint-widescreen {
-    height: 450px;
+  @include media-breakpoint-up(xl) {
+    height: 330px;
   }
-  @include media-breakpoint-xl {
+  @include media-breakpoint-down(xl) {
     height: 330px;
   }
   @include media-breakpoint-down(lg) {
@@ -49,10 +49,10 @@
   .carousel-cell {
     position: relative;
     width: 600px;
-    @include media-breakpoint-widescreen {
-      height: 450px;
+    @include media-breakpoint-up(xl) {
+      height: 330px;
     }
-    @include media-breakpoint-xl {
+    @include media-breakpoint-down(xl) {
       height: 330px;
     }
     @include media-breakpoint-down(lg) {
@@ -73,7 +73,7 @@
       margin-bottom: 0px;
       background-color: rgba(0, 0, 0, .4);
       z-index: 1;
-      @include media-breakpoint-xl {
+      @include media-breakpoint-down(xl) {
         background-color: rgba(0, 0, 0, 0.6);
         // padding: 20px;
       }
@@ -87,10 +87,10 @@
       left: 0;
       width: 100%;
       height: 449px;
-      @include media-breakpoint-widescreen {
-        height: 450px;
+      @include media-breakpoint-up(xl) {
+        height: 330px;
       }
-      @include media-breakpoint-xl {
+      @include media-breakpoint-down(xl) {
         height: 330px;
       }
       @include media-breakpoint-down(lg) {

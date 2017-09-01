@@ -4,11 +4,11 @@
   z-index: 1;
   padding: 0;
   height: 100vh;
-  @include media-breakpoint-widescreen {
+  @include media-breakpoint-up(xl) {
     padding-top: 150px;
     padding-bottom: 0;
   }
-  @include media-breakpoint-xl {
+  @include media-breakpoint-down(xl) {
     padding-top: 120px;
     padding-bottom: 0;
   }
@@ -16,6 +16,9 @@
     padding-top: 50px;
     padding-bottom: 50px;
     height: 80vh;
+  }
+  @include media-breakpoint-down(sm) {
+    height: auto;
   }
   &__inner {
     position: relative;
@@ -60,11 +63,11 @@
       position: relative;
       background-size: contain;
       margin: 0 auto;
-      @include media-breakpoint-widescreen {
-        width: 2000px;
-        height: 1000px;
+      @include media-breakpoint-up(xl) {
+        width: 1200px;
+        height: 900px;
       }
-      @include media-breakpoint-xl {
+      @include media-breakpoint-down(xl) {
         width: 1200px;
         height: 800px;
       }
@@ -79,13 +82,13 @@
       z-index: -1;
       transform-origin: bottom left;
       transition: .1s transform linear;
-      @include media-breakpoint-widescreen {
-        width: 1317px;
-        height: 97px;
-        top: 6.5%;
-        left: 17%;
+      @include media-breakpoint-up(xl) {
+        width: 898px;
+        height: 60px;
+        top: 17.5%;
+        left: 5%;
       }
-      @include media-breakpoint-xl {
+      @include media-breakpoint-down(xl) {
         width: 1054px;
         height: 72px;
         top: 7%;
@@ -102,10 +105,12 @@
       height: auto;
       margin-left: 0.3%;
       transform: translateX(-50%);
-      @include media-breakpoint-widescreen {
-        width: 1270px;
+      @include media-breakpoint-up(xl) {
+        top: 30%;
+        left: 50%;
+        width: 898px;
       }
-      @include media-breakpoint-xl {
+      @include media-breakpoint-down(xl) {
         width: 1000px;
       }
       @include media-breakpoint-down(lg) {
@@ -125,12 +130,12 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      @include media-breakpoint-widescreen {
-        padding-top: 5px;
-        padding-bottom: 5px;
-        min-height: 285px;
+      @include media-breakpoint-up(xl) {
+        // padding-top: 5px;
+        // padding-bottom: 5px;
+        min-height: 210px;
       }
-      @include media-breakpoint-xl {
+      @include media-breakpoint-down(xl) {
         padding-top: 25px;
         padding-bottom: 25px;
         min-height: 225px;
@@ -175,11 +180,11 @@
         width: 100%;
         margin-bottom: 10px;
         text-align: center;
-        @include media-breakpoint-widescreen {
+        @include media-breakpoint-up(xl) {
           padding-left: 5px;
           padding-right: 5px;
         }
-        @include media-breakpoint-xl {
+        @include media-breakpoint-down(xl) {
           padding-left: 10px;
           padding-right: 10px;
         }
