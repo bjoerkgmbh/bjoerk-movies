@@ -2,6 +2,8 @@
   padding: 0;
   background-color: white;
   height: auto;
+  position: relative;
+  z-index: 1;
   >.container {
     padding: 0;
     >.row {

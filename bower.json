@@ -22,6 +22,12 @@
         "./css/font-awesome.min.css"
       ]
     },
+    "sweetalert2": {
+      "main": [
+        "./dist/sweetalert2.min.css",
+        "./dist/sweetalert2.min.js"
+      ]
+    },
     "animate.css": {
       "main": [
         "./animate.min.css"

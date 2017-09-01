@@ -3,7 +3,7 @@
   height: 150vh;
   overflow: hidden;
   position: relative;
-  z-index: -1;
+  // z-index: 1;
   @media (max-width: 1024px) {
     display: none;
   }
