@@ -7,7 +7,7 @@
   z-index: 1;
   overflow: hidden;
   height: 100vh;
-  @include media-breakpoint-widescreen {
+  @include media-breakpoint-up(xl) {
     height: 120vh;
   }
   @include media-breakpoint-down(lg) {
@@ -35,7 +35,7 @@
     height: 100%;
     margin: 0 auto;
     opacity: 1;
-    @include media-breakpoint-widescreen {
+    @include media-breakpoint-up(xl) {
       width: 2550px;
       background-size: 100%;
       background-position: 5% 5%;
@@ -147,7 +147,7 @@
           }
         }
         &--star {
-          @include media-breakpoint-widescreen {
+          @include media-breakpoint-up(xl) {
             position: absolute;
             z-index: 2;
             width: 480px;
