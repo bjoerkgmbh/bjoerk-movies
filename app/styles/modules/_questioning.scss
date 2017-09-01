@@ -133,3 +133,9 @@
 .decoration span.right-bottom {
   bottom: -5px;
 }
+
+@include media-breakpoint-down(sm) {
+  .questioning .row .col-12:last-child .questioning__section {
+    margin-bottom: 0 !important;
+  }
+}
