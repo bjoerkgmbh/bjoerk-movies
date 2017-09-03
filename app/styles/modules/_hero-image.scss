@@ -6,10 +6,7 @@
   position: relative;
   z-index: 1;
   overflow: hidden;
-  height: 100vh;
-  @include media-breakpoint-up(xl) {
-    height: 120vh;
-  }
+  height: 110vh;
   @include media-breakpoint-down(lg) {
     @media (orientation: landscape) {
       height: 100vh;
@@ -35,21 +32,9 @@
     height: 100%;
     margin: 0 auto;
     opacity: 1;
-    @include media-breakpoint-up(xl) {
-      width: 2550px;
-      background-size: 100%;
-      background-position: 5% 5%;
-    }
-    @media (min-width: 1500px) and (max-width: 1999px) {
-      width: 2000px;
-      background-size: 100%;
-      background-position: 50% -180px;
-    }
-    @media (min-width: 1200px) and (max-width: 1499px) {
-      width: 1500px;
-      background-size: cover;
-      background-position: 0 -100px;
-    }
+    width: 2550px;
+    background-size: 100%;
+    background-position: 5% 5%;
     @include media-breakpoint-down(lg) {
       background-attachment: initial;
       width: 100%;
@@ -69,12 +54,7 @@
       position: absolute;
       bottom: 0;
       left: 0;
-      @media (min-width: 1500px) and (max-width: 1999px) {
-        height: 600px;
-      }
-      @media (min-width: 1200px) and (max-width: 1499px) {
-        height: 500px;
-      }
+      width: 100%;
       @include media-breakpoint-down(lg) {
         height: 100%;
       }
@@ -82,24 +62,14 @@
         margin: 0 auto;
         text-align: center;
         height: auto;
-        width: 1140px;
+        width: 800px;
         position: absolute;
         z-index: 1;
         left: 50%;
         transform: translateX(-50%) !important;
         bottom: 95px;
-        padding: 60px;
+        padding: 40px;
         background-color: rgba(255, 255, 255, 0.8);
-        @media (min-width: 1500px) and (max-width: 1999px) {
-          padding: 30px;
-          bottom: 45px;
-          width: 900px;
-        }
-        @media (min-width: 1200px) and (max-width: 1499px) {
-          padding: 30px;
-          bottom: 25px;
-          width: 700px;
-        }
         @include media-breakpoint-down(lg) {
           transform: none !important;
           width: 100%;
@@ -130,47 +100,14 @@
         }
         &--text-style {
           color: black;
-          @media (min-width: 1500px) and (max-width: 1999px) {
-            font-size: 1.2rem;
-          }
-          @media (min-width: 1200px) and (max-width: 1499px) {
-            font-size: 1rem;
-          }
-          @include media-breakpoint-only(lg) {
-            font-size: 1.3rem;
-          }
-          @include media-breakpoint-only(md) {
-            font-size: 1.2rem;
-          }
-          @include media-breakpoint-down(sm) {
-            line-height: 1.5;
-          }
         }
         &--star {
-          @include media-breakpoint-up(xl) {
-            position: absolute;
-            z-index: 2;
-            width: 480px;
-            top: -210px;
-            left: -230px;
-            transform: rotate(353deg);
-          }
-          @media (min-width: 1500px) and (max-width: 1999px) {
-            position: absolute;
-            z-index: 2;
-            width: 400px;
-            top: -70%;
-            left: -24%;
-            transform: rotate(353deg);
-          }
-          @media (min-width: 1200px) and (max-width: 1499px) {
-            position: absolute;
-            z-index: 2;
-            width: 330px;
-            top: -129px;
-            left: -25%;
-            transform: rotate(353deg);
-          }
+          position: absolute;
+          z-index: 2;
+          width: 400px;
+          top: -180px;
+          left: -210px;
+          transform: rotate(353deg);
           @include media-breakpoint-down(lg) {
             display: none;
           }

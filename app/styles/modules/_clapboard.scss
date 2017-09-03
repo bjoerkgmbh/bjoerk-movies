@@ -1,17 +1,10 @@
 .clapboard {
   background-color: white;
   position: relative;
-  //z-index: 1;
   padding: 0;
   height: 100vh;
-  @include media-breakpoint-up(xl) {
-    padding-top: 50px;
-    padding-bottom: 0;
-  }
-  @include media-breakpoint-down(xl) {
-    padding-top: 50px;
-    padding-bottom: 0;
-  }
+  padding-top: 50px;
+  padding-bottom: 0;
   @include media-breakpoint-down(lg) {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -45,7 +38,7 @@
           width: 8%;
         }
         @include media-breakpoint-down(sm) {
-              margin-bottom: 20px;
+          margin-bottom: 20px;
         }
       }
     }
@@ -61,14 +54,8 @@
       position: relative;
       background-size: contain;
       margin: 0 auto;
-      @include media-breakpoint-up(xl) {
-        width: 1200px;
-        height: 900px;
-      }
-      @include media-breakpoint-down(xl) {
-        width: 1200px;
-        height: 800px;
-      }
+      width: 1200px;
+      height: 900px;
       @include media-breakpoint-down(lg) {
         width: 100%;
         height: auto;
@@ -81,37 +68,22 @@
       z-index: -1;
       transform-origin: bottom left;
       transition: .1s transform linear;
-      @include media-breakpoint-up(xl) {
-        width: 1078px;
-        height: 80px;
-        top: 10.2%;
-        left: 5%;
-      }
-      @include media-breakpoint-down(xl) {
-        width: 1054px;
-        height: 72px;
-        top: 7%;
-        left: 6%;
-      }
+      width: 1078px;
+      height: 80px;
+      top: 10.2%;
+      left: 5%;
       @include media-breakpoint-down(lg) {
         display: none;
       }
     }
     &__sections {
       position: absolute;
-      top: 28%;
+      top: 30%;
       left: 50%;
+      width: 1000px;
       height: auto;
       margin-left: 0.3%;
       transform: translateX(-50%);
-      @include media-breakpoint-up(xl) {
-        top: 30%;
-        left: 50%;
-        width: 1000px;
-      }
-      @include media-breakpoint-down(xl) {
-        width: 1000px;
-      }
       @include media-breakpoint-down(lg) {
         position: initial;
         top: 0;
@@ -122,44 +94,26 @@
       }
     }
     &__section {
-      background-color: #eee;
+      background-color: white;
       text-align: center;
       margin-bottom: 20px;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      @include media-breakpoint-up(xl) {
-        // padding-top: 5px;
-        // padding-bottom: 5px;
-        min-height: 210px;
-      }
-      @include media-breakpoint-down(xl) {
-        padding-top: 25px;
-        padding-bottom: 25px;
-        min-height: 225px;
-        margin-bottom: 30px;
-      }
-      @include media-breakpoint-only(lg) {
+      min-height: 210px;
+      @include media-breakpoint-down(lg) {
         margin-bottom: 0;
         padding-top: 0;
         padding-bottom: 5px;
         min-height: 185px;
-        background-color: white;
       }
-      @include media-breakpoint-only(md) {
-        padding-top: 0;
+      @include media-breakpoint-down(md) {
         padding-bottom: 0;
-        margin-bottom: 0;
-        background-color: white;
         height: 200px;
       }
       @include media-breakpoint-down(sm) {
-        margin-bottom: 0;
         min-height: auto;
-        background-color: white;
-        padding-bottom: 30px;
-        padding-top: 0;
       }
       &--header-style {
         margin: 0;
@@ -184,14 +138,8 @@
         width: 100%;
         margin-bottom: 10px;
         text-align: center;
-        @include media-breakpoint-up(xl) {
-          padding-left: 5px;
-          padding-right: 5px;
-        }
-        @include media-breakpoint-down(xl) {
-          padding-left: 10px;
-          padding-right: 10px;
-        }
+        padding-left: 5px;
+        padding-right: 5px;
         @include media-breakpoint-only(lg) {
           height: 70px;
           padding-left: 25px;

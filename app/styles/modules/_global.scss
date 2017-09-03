@@ -5,105 +5,31 @@
 @include font-face('OpenSans', '../fonts/OpenSans-Regular');
 @include font-face('OpenSans-light', '../fonts/OpenSans-Light');
 @include font-face('OpenSans-bold', '../fonts/OpenSans-Bold');
-html {
-  @include media-breakpoint-only(xs) {
-    h1 {
-      font-size: 24px;
-    }
-    h2 {
-      font-size: 25px;
-    }
-    h4 {
-      font-size: 18px;
-    }
-    p {
-      font-size: 14px;
-      line-height: 1.5;
-    }
-  }
-  @include media-breakpoint-only(sm) {
-    h1 {
-      font-size: 28px;
-    }
-    h2 {
-      font-size: 25px;
-    }
-    h4 {
-      font-size: 15px;
-    }
-    p {
-      font-size: 14px;
-      line-height: 1.5;
-    }
-  }
-  @include media-breakpoint-only(md) {
-    h1 {
-      font-size: 32px;
-    }
-    h2 {
-      font-size: 30px;
-    }
-    h4 {
-      font-size: 20px;
-    }
-    p {
-      font-size: 16px;
-      line-height: 1.3;
-    }
-  }
-  @include media-breakpoint-only(lg) {
-    h1 {
-      font-size: 35px;
-    }
-    h2 {
-      font-size: 26px;
-    }
-    h4 {
-      font-size: 18px;
-    }
-    p {
-      font-size: 15px;
-      line-height: 1.2;
-    }
-  }
-  @include media-breakpoint-xl {
-    h1 {
-      font-size: 38px;
-    }
-    h2 {
-      font-size: 28px;
-    }
-    h4 {
-      font-size: 16px;
-    }
-    p {
-      font-size: 14px;
-      line-height: 1.3;
-    }
-  }
-  @include media-breakpoint-widescreen {
-    h1 {
-      font-size: 50px;
-    }
-    h2 {
-      font-size: 35px;
-    }
-    h4 {
-      font-size: 25px;
-    }
-    p {
-      font-size: 20px;
-      line-height: 1.3;
-    }
-    a {
-      font-size: 25px;
-    }
-  }
+body {
+  font-family: "oswald";
+}
+
+h1 {
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 35px;
+}
+
+h4 {
+  font-size: 25px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.3;
 }
 
 a {
   color: white;
   text-decoration: none;
+  //font-size: 20px;
   &:hover {
     color: white;
     text-decoration: none;
@@ -116,19 +42,6 @@ a {
     color: white;
     text-decoration: none;
   }
-}
-
-body {
-  font-family: "oswald";
-  // position: relative;
-  // height: auto;
-  // width: 100%;
-  // margin: 0;
-}
-
-div {
-  // height: 100%;
-  width: 100%;
 }
 
 h1,
@@ -149,8 +62,69 @@ p {
 }
 
 .web-container {
-  // position: relative;
-  // z-index: 2;
   background: white;
-  // overflow: hidden;
+}
+
+@include media-breakpoint-up(xs) {
+  h1 {
+    font-size: 24px;
+  }
+  h2 {
+    font-size: 25px;
+  }
+  h4 {
+    font-size: 18px;
+  }
+  p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+}
+
+@include media-breakpoint-up(sm) {
+  h1 {
+    font-size: 28px;
+  }
+  h2 {
+    font-size: 25px;
+  }
+  h4 {
+    font-size: 15px;
+  }
+  p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  h1 {
+    font-size: 32px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  h4 {
+    font-size: 20px;
+  }
+  p {
+    font-size: 16px;
+    line-height: 1.3;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  h1 {
+    font-size: 35px;
+  }
+  h2 {
+    font-size: 26px;
+  }
+  h4 {
+    font-size: 18px;
+  }
+  p {
+    font-size: 15px;
+    line-height: 1.2;
+  }
 }

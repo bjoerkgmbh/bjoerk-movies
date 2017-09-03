@@ -23,7 +23,7 @@ class Cover {
           offset: $(window).width() / 6,
           triggerHook: 0
         })
-        .setPin('.cover')
+        .setPin('.cover', {pushFollowers: false})
         .addTo(controller);
       $('.cover__media').get(0).play();
 

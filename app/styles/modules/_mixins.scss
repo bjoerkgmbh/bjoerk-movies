@@ -28,33 +28,3 @@
     src: $src;
   }
 }
-
-// =============================================================================
-// Media Breakpoint between LG and XL
-// =============================================================================
-@mixin media-breakpoint-between-lg-and-xl {
-  // large devices (large desktops, 1200px to 1600px)
-  @media (min-width: 1200px) and (max-width: 1999px) {
-    @content;
-  }
-}
-
-// =============================================================================
-// Media Breakpoint between LG and XL
-// =============================================================================
-@mixin media-breakpoint-xl {
-  // large devices (large desktops, 1200px to 1600px)
-  @media (min-width: 1200px) and (max-width: 1999px) {
-    @content;
-  }
-}
-
-// =============================================================================
-// Media Breakpoint above 2000px
-// =============================================================================
-@mixin media-breakpoint-widescreen {
-  //Extra large devices (large desktops, 2000px and above)
-  @media (min-width: 2000px) {
-    @content;
-  }
-}

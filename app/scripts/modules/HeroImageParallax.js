@@ -37,7 +37,7 @@ class HeroImageParallax {
       var parallaxScene = new ScrollMagic.Scene({
           triggerElement: '.hero-image',
           duration: '100%',
-          triggerHook: .3
+          triggerHook: .6
         })
         .setTween(parallaxTweenLineLite)
         .addTo(controller);
