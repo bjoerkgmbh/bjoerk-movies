@@ -3,6 +3,9 @@
   height: 150vh;
   overflow: hidden;
   position: relative;
+  @media (max-width: 1599px) {
+    height: 125vh;
+  }
   @media (max-width: 1024px) {
     display: none;
   }
@@ -15,18 +18,10 @@
   width: 100%;
   left: 0;
   top: 0;
-  overflow: hidden;
 }
 
 #parallax-rahmen.versteckt {
   display: none;
-}
-
-.platzhalter {
-  height: 300%;
-  background-color: rgba(255, 255, 255, 0.9);
-  z-index: 1;
-  position: relative;
 }
 
 #parallax0 {
@@ -43,10 +38,18 @@
 #parallax3,
 #parallax4 {
   position: absolute;
-  width: 100%;
+  width: 120%;
   height: 103%;
   left: 50%;
   top: 30%;
+  @media (max-width: 1599px) {
+    width: 180%;
+    height: 110%;
+  }
+  @include media-breakpoint-down(lg) {
+    left: 0;
+    top: 0;
+  }
   @media (max-width: 1024px) {
     display: none;
   }
@@ -54,4 +57,7 @@
 
 #parallax1 {
   transform: translateX(-50%);
+  @include media-breakpoint-down(lg) {
+    transform: none;
+  }
 }

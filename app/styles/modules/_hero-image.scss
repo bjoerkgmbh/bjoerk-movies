@@ -19,12 +19,7 @@
     height: 75vh;
   }
   @include media-breakpoint-down(sm) {
-    @media (orientation: landscape) {
-      height: 600px;
-    }
-    @media (orientation: portrait) {
-      height: 800px;
-    }
+    height: 500px;
   }
   &__background {
     background: url('../images/sherrif_klein.jpg') no-repeat;
@@ -80,6 +75,7 @@
           top: initial;
         }
         @include media-breakpoint-down(sm) {
+          height: 100%;
           width: 100%;
           padding: 15px;
           background-color: rgba(255, 255, 255, 0.5);
@@ -88,6 +84,7 @@
           text-transform: uppercase;
           color: black;
           @include media-breakpoint-down(sm) {
+            margin-top: 40%;
             font-size: 1.2rem;
           }
         }
