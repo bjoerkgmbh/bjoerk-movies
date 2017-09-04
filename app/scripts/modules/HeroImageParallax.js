@@ -25,8 +25,8 @@ class HeroImageParallax {
       parallaxTweenLineLite.from('.hero-image__foreground__inner--star', 1, {
           autoAlpha: 0,
           x: -500,
-          width: 2000,
-          rotation: 360
+          width: 2200,
+          rotation: 390
       });
       parallaxTweenLineLite.from('#first_gunshot', .1, {opacity:0, delay:.1});
       parallaxTweenLineLite.from('#second_gunshot', .1, {opacity:0, delay:.2});

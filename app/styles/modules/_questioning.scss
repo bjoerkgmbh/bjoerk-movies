@@ -4,8 +4,8 @@
   height: auto;
   position: relative;
   z-index: 1;
-  padding-top: 150px;
-  padding-bottom: 150px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   @include media-breakpoint-down(lg) {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -38,7 +38,7 @@
   &__section {
     margin-bottom: 50px;
     text-align: center;
-    &--title-style {
+    & &--title-style {
       text-transform: uppercase;
       @include media-breakpoint-down(sm) {
         font-size: 1.2rem;
@@ -109,8 +109,6 @@
   bottom: -30px;
 }
 
-@include media-breakpoint-down(sm) {
-  .questioning .row .col-12:last-child .questioning__section {
-    margin-bottom: 0 !important;
-  }
+.questioning .row .col-12:last-child .questioning__section {
+  margin-bottom: 25px !important;
 }
