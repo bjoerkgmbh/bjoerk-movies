@@ -22,9 +22,6 @@
   &--header-style {
     text-transform: uppercase;
     text-align: center;
-    @include media-breakpoint-down(sm) {
-      font-size: 1.2rem;
-    }
   }
   &--line-style {
     border: 1px solid;

@@ -13,9 +13,6 @@
   &--header-style {
     text-align: center;
     text-transform: uppercase;
-    @include media-breakpoint-down(sm) {
-      font-size: 1.2rem;
-    }
   }
   &--line-style {
     border: 1px solid;

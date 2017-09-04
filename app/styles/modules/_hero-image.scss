@@ -85,7 +85,6 @@
           color: black;
           @include media-breakpoint-down(sm) {
             margin-top: 40%;
-            font-size: 1.2rem;
           }
         }
         &--line-style {

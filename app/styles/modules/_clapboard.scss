@@ -26,9 +26,6 @@
       &--header-style {
         text-transform: uppercase;
         margin: 0;
-        @include media-breakpoint-down(sm) {
-          font-size: 1.2rem;
-        }
       }
       &--line-style {
         border: 1px solid;
@@ -113,7 +110,9 @@
         height: 200px;
       }
       @include media-breakpoint-down(sm) {
+        height: auto;
         min-height: auto;
+        padding-bottom: 30px;
       }
       &--header-style {
         margin: 0;
