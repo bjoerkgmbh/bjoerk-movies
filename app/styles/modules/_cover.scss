@@ -30,7 +30,7 @@
     height: 100%;
     background-color: transparent;
     z-index: 300;
-    background-color: rgba(0, 0, 0, .2)
+    background-color: rgba(0, 0, 0, .2);
   }
   &__media {
     width: 100%;
@@ -38,7 +38,7 @@
     top: 0;
     left: 0;
     z-index: 0;
-    object-fit: contain;
+    object-fit: cover;
     height: 100%;
     @include media-breakpoint-down(sm) {
       height: 75%;
