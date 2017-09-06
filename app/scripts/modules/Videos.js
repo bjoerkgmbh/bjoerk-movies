@@ -13,7 +13,7 @@ class Videos {
       'initialIndex': 2,
       'contain': true,
       'wrapAround': true,
-      'cellAlign': 'center',
+      'cellAlign': 'left',
       'autoPlay': 3000,
       'draggable': false
     });

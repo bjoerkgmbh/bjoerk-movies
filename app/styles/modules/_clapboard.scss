@@ -2,13 +2,12 @@
   background-color: white;
   position: relative;
   padding: 0;
-  height: 100vh;
+  height: auto;
   padding-top: 50px;
   padding-bottom: 0;
   @include media-breakpoint-down(lg) {
     padding-top: 50px;
     padding-bottom: 50px;
-    height: auto;
   }
   &__inner {
     position: relative;
