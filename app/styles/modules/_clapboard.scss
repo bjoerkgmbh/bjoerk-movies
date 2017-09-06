@@ -145,8 +145,8 @@
         }
         @include media-breakpoint-only(md) {
           height: 60px;
-          padding-left: 35px;
-          padding-right: 35px;
+          padding-left: 28px;
+          padding-right: 28px;
         }
         @include media-breakpoint-down(sm) {
           padding-left: 0;
