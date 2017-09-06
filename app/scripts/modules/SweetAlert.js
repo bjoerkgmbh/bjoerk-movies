@@ -21,7 +21,6 @@ class SweetAlert {
     else {
       touchType = 'click';
     }
-    console.log(touchType);
     $('#ausbildungsfilm_btn').on(touchType, function () {
       swal({
         title: 'Ausbildungsfilm',

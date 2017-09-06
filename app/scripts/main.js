@@ -5,7 +5,6 @@ import FadeInSections from './modules/FadeInSections';
 import HeroImageParallax from './modules/HeroImageParallax';
 import Cover from './modules/Cover';
 import Parallax from './modules/Parallax';
-import Smoke from './modules/Smoke';
 import SweetAlert from './modules/SweetAlert';
 
 new Clapboard();
@@ -15,5 +14,4 @@ new FadeInSections();
 new HeroImageParallax();
 new Cover();
 new Parallax();
-new Smoke();
 new SweetAlert();
