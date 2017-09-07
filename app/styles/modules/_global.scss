@@ -56,15 +56,6 @@ p {
   font-family: "OpenSans";
 }
 
-.nymphette {
-  font-family: "nymphette";
-}
-
-.web-container {
-  background: white;
-  overflow: hidden;
-}
-
 @include media-breakpoint-up(xs) {
   h1 {
     font-size: 24px;

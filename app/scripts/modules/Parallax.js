@@ -69,34 +69,18 @@ class Parallax {
           var tempY2 = (20 - (tempY / windowHeight * 40));
           var tempTranslate = ('translate(' + (tempX2 * scaleFactor * 0.2 - 50) + '%, ' + (tempY2 * scaleFactor * 0.2 - 50) + '%) scale(' + (0.2 * scaleFactor + 1) + ')');
           $('img#parallax1').css({
-            '-webkit-transform': tempTranslate,
-            '-moz-transform': tempTranslate,
-            '-ms-transform': tempTranslate,
-            '-o-transform': tempTranslate,
             'transform': tempTranslate,
           });
           tempTranslate = ('translate(' + (tempX2 * scaleFactor * 0.4 - 50) + '%, ' + (tempY2 * scaleFactor * 0.4 - 50) + '%) scale(' + (0.4 * scaleFactor + 1) + ')');
           $('img#parallax2').css({
-            '-webkit-transform': tempTranslate,
-            '-moz-transform': tempTranslate,
-            '-ms-transform': tempTranslate,
-            '-o-transform': tempTranslate,
             'transform': tempTranslate,
           });
           tempTranslate = ('translate(' + (tempX2 * scaleFactor * 0.6 - 50) + '%, ' + (tempY2 * scaleFactor * 0.6 - 50) + '%) scale(' + (0.6 * scaleFactor + 1) + ')');
           $('img#parallax3').css({
-            '-webkit-transform': tempTranslate,
-            '-moz-transform': tempTranslate,
-            '-ms-transform': tempTranslate,
-            '-o-transform': tempTranslate,
             'transform': tempTranslate,
           });
           tempTranslate = ('translate(' + (tempX2 * scaleFactor * 0.8 - 50) + '%, ' + (tempY2 * scaleFactor * 0.8 - 50) + '%) scale(' + (0.8 * scaleFactor + 1) + ')');
           $('img#parallax4').css({
-            '-webkit-transform': tempTranslate,
-            '-moz-transform': tempTranslate,
-            '-ms-transform': tempTranslate,
-            '-o-transform': tempTranslate,
             'transform': tempTranslate,
           });
         } else {
