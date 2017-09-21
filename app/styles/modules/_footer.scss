@@ -30,6 +30,9 @@
       @include media-breakpoint-down(sm) {
         line-height: 1.2;
       }
+      a {
+        font-weight: 600;
+      }
     }
   }
   &__second-right {
